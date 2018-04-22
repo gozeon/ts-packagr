@@ -1,6 +1,6 @@
 {
   "name": "goze-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generator npm package by rollup and typescript",
   "main": "dist/index.umd.js",
   "module": "dist/index.esm5.js",

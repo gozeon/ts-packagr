@@ -71,6 +71,7 @@ const esConfig = Object.assign({}, baseConfig, {
 });
 
 const umdConfig = Object.assign({}, baseConfig, {
+  input: 'src/iife-umd.ts',
   output: {
     file: pkg.main,
     name: camelCase(libraryName),
@@ -79,7 +80,7 @@ const umdConfig = Object.assign({}, baseConfig, {
 });
 
 const iifeConfig = Object.assign({}, baseConfig, {
-  input: 'src/iife.ts',
+  input: 'src/iife-umd.ts',
   output: {
     file: pkg.browser,
     name: camelCase(libraryName),
