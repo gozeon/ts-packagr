@@ -81,11 +81,11 @@ const umdConfig = Object.assign({}, baseConfig, {
 const iifeConfig = Object.assign({}, baseConfig, {
   input: 'src/iife.ts',
   output: {
-    file: 'dist/aio.min.js',
+    file: pkg.browser,
     name: camelCase(libraryName),
-    format: 'iife'
+    format: 'iife',
+    sourcemap: false
   },
-  sourcemap: false,
   plugins: [json(), typescript(), commonjs(), resolve(), uglify()]
 });
 
