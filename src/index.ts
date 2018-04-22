@@ -1,6 +1,9 @@
 import { a } from './a';
 
-export class Goze {
+/**
+ * @Note must have a default, format umd、iife can return default to bind name
+ */
+export default class Goze {
   static say(n: string) {
     a(n);
   }
